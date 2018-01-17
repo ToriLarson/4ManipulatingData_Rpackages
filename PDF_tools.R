@@ -1,17 +1,31 @@
-# using this library
+# Using Libray pdftools
 library(pdftools)
+
 # assigning a varibale
 Hotelpdf <- pdf_text("HotelReview12.31.17.pdf")
-# printing the named variable
-Hotelpdf
+
 ## extract text vector
-text <- pdf_text("HotelReview12.31.17.pdf")
-## print text from page 1
-cat(text[1])
-p3 = strsplit(text[3], "\n")
+pdfpages <- pdf_text("HotelReview12.31.17.pdf")
 
-stripWhitespace(p2[[1]][4])
-strsplit()
+# String split with "\n" - creates new lines
+pagebreaks = strsplit(pdfpages, "\n")
 
-strsplit(stripWhitespace(p3[[1]][16]), " ")
-strsplit(stripWhitespace(p3[[1]][18]), " ")
+# Want to focus on page 3 of the vector in the list.
+pdfpage3 <- pagebreaks[[3]]
+
+#
+
+
+
+
+# same -> [[]] - are used with lists, [] - are related to vectors
+pagespaces = strsplit(pdfpages," ")
+strsplit(pdfpages, " ")[[5]][1]
+page5[1]
+pagespaces[[5]][1]
+pagebreaks = strsplit(pdfpages,"\n")
+
+# creating variable of strstring-ed page 3
+pdfpage3 <- pagebreaks[[3]]
+
+
