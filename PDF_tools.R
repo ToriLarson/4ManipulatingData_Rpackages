@@ -34,15 +34,15 @@ datapagetest = unlist(datapage)
 Hoteldata = cbind.data.frame(split(datapagetest, rep(1:18, times=length(datapagetest)/18)), stringsAsFactors=F)
 
 # Adding column names
-names(Hoteldata) = c("CW_2017_Occ", "CW_2016_Occ", "CW_2017_ADR", "CW_2016_ADR", 
-                     "CW_2017_RevPar","CW_2016_RevPar","CW_PercentChange_Occ","CW_PercentChange_ADR","CW_PercentChange_Revpar",
+names(Hoteldata) = c("CurrentWeek_2017_Occ", "CurrentWeek_2016_Occ", "CurrentWeek_2017_ADR", "CurrentWeek_2016_ADR", 
+                     "CurrentWeek_2017_RevPar","CurrentWeek_2016_RevPar","CurrentWeek_PercentChange_Occ","CurrentWeek_PercentChange_ADR","CurrentWeek_PercentChange_Revpar",
                      "28days_2017_Occ","28days_2016_Occ","28days_2017_ADR","28days_2016_ADR","28days_2017_RevPar","28days_2016_RevPar",
                      "28days_PercentChange_Occ","28days_PercentChange_ADR","28days_PercentChange_Revpar")
 
 # Creating vector called "hotelnames"
-hotelnames = c("Total United States","CS_Luxury","CS_Upper Upscale","CS_Upscale","CS_Upper Midscale",
-               "CS_Midscale","CS_Economy","CS_Independents","Luxury","Upper Upscale","Upscale","Upper Midscale",
-               "Midscale","Economy","Urban","Suburban","Airport","Interstate","Resort","Small Metro/Town","Anaheim",
+hotelnames = c("Total United States","ChainScale_Luxury","ChainScale_Upper Upscale","ChainScale_Upscale","ChainScale_Upper Midscale",
+               "ChainScale_Midscale","ChainScale_Economy","ChainScale_Independents","Class_Luxury","Class_Upper_Upscale","Class_Upscale","Class_Upper_Midscale",
+               "Class_Midscale","Class_Economy","Location_Urban","Location_Suburban","Location_Airport","Location_Interstate","Location_Resort","Location_Small_Metro/Town","Anaheim",
                "Atlanta","Boston","Chicago","Dallas","Denver","Detroit","Houston","Los Angeles","Miami","Minneapolis",
                "Nashville","New Orleans","New York","Norfolk","Oahu","Orlando","Philadelphia","Phoenix","San Diego",
                "San Francisco","Seattle","St Louis","Tampa/St Petersburg","Washington DC")
