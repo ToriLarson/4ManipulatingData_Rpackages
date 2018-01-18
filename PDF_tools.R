@@ -1,10 +1,7 @@
 # Using Libray pdftools
 library(pdftools)
 
-# assigning a varibale
-Hotelpdf <- pdf_text("HotelReview12.31.17.pdf")
-
-## extract text vector
+# Assigning a variable
 pdfpages <- pdf_text("HotelReview12.31.17.pdf")
 
 # String split with "\n" - creates new lines
