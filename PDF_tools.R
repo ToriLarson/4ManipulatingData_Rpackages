@@ -49,15 +49,3 @@ row.names(Hoteldata) = hotelnames
 
 #Viewing my masterpiece
 View(Hoteldata)
-
-
-
-# same -> [[]] - are used with lists, [] - are related to vectors
-pagespaces = strsplit(pdfpages," ")
-strsplit(pdfpages, " ")[[5]][1]
-page5[1]
-pagespaces[[5]][1]
-pagebreaks = strsplit(pdfpages,"\n")
-
-# creating variable of strstring-ed page 3
-pdfpage3 <- pagebreaks[[3]]
